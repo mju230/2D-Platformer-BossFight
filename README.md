@@ -57,4 +57,4 @@
 - `Enemy` 타입 분기를 현재 enum + switch 구조에서 상속(다형성) 구조로 리팩토링 예정
 
 ## 🎨 Assets
-무료 에셋 사용 (에셋 팩 출처는 추후 명시 예정)
+이 프로젝트는 Ansimuz의 [Warped City Assets Pack](https://assetstore.unity.com/packages/2d/environments/warped-city-assets-pack-138128)을 사용했습니다. 라이선스 조건에 따라 에셋 원본 파일은 이 저장소에 포함하지 않았습니다.
