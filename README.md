@@ -1,9 +1,20 @@
+
 # 🌆 2D Platformer - Boss Fight
 
 사이버펑크 톤의 2D 액션 플랫포머 프로토타입입니다. 상태머신 기반 보스전과 여러 종류의 적 AI, 사다리/앉아쏘기 등 캐릭터 컨트롤러를 구현했습니다.
 
 ## 🎮 Gameplay
-스크린샷 추가 예정
+<img width="1172" height="664" alt="공격" src="https://github.com/user-attachments/assets/46d2675b-ca22-4e61-96ca-3154e0b071cf" />
+*기본 플레이 장면*
+
+<img width="937" height="527" alt="사다리타기" src="https://github.com/user-attachments/assets/5b2de7b3-790d-4965-abd0-d3b190e3e8f8" />
+*사다리 등반*
+
+<img width="941" height="528" alt="앉아쏘기" src="https://github.com/user-attachments/assets/dbd75854-2f30-401c-b7c0-ab027569fb7f" />
+*앉아쏘기 모션*
+
+<img width="1173" height="663" alt="보스" src="https://github.com/user-attachments/assets/0ec05223-cf14-4359-bb3b-64485aa17e52" />
+*보스*
 
 ## 📌 Features
 - 사다리 등반, 앉아쏘기, 넉백/무적 프레임을 포함한 캐릭터 컨트롤러
