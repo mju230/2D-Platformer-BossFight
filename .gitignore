@@ -98,3 +98,7 @@ InitTestScene*.unity*
 
 # Auto-generated scenes by play mode tests
 /[Aa]ssets/[Ii]nit[Tt]est[Ss]cene*.unity*
+
+# Third-party paid/free Asset Store content — not redistributed, credited in README instead
+/[Aa]ssets/Warped City Assets/
+/[Aa]ssets/Warped City Assets.meta
