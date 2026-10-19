@@ -115,7 +115,7 @@ public class Player : MonoBehaviour
             isClimb = true;
         }
 
-        if (isRun && isMove && anim.GetCurrentAnimatorStateInfo(0).IsTag("Shooting"))
+        if ((isRun && isMove && anim.GetCurrentAnimatorStateInfo(0).IsTag("Shooting")) || isCrouch || isJump)
         {
             anim.ResetTrigger("Fire");
         }
@@ -138,8 +138,8 @@ public class Player : MonoBehaviour
                 rigid.velocity = Vector2.zero;
             }
         }
-
-        isShooting = anim.GetCurrentAnimatorStateInfo(0).IsTag("Shooting");
+        if(!isJump && !isCrouch)
+            isShooting = anim.GetCurrentAnimatorStateInfo(0).IsTag("Shooting");
 
         anim.SetFloat("Speed", Mathf.Abs(inputVec.x));
         anim.SetBool("isRun", isRun);
@@ -287,7 +287,8 @@ public class Player : MonoBehaviour
         int knockbackDirection = transform.position.x > attackerPosition.x ? 1 : -1;
         rigid.AddForce(new Vector2(knockbackDirection, 0.5f) * knockbackForce, ForceMode2D.Impulse);
 
-        anim.SetTrigger("isDamaged");
+        if(!isJump && !isClimb)
+            anim.SetTrigger("isDamaged");
 
         if (curHelath <= 0)
         {
